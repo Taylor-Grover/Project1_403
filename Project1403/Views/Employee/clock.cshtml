@@ -1,0 +1,24 @@
+﻿@model Project1403.Models.Employee
+
+@{
+    ViewBag.Title = "clock";
+}
+
+<h2>clock</h2>
+<div class="container">
+    <div class="jumbotron">
+
+        <input type="submit"  name="status" value="IN" formaction=@Url.Action("clock") formmethod="post"/>
+        <input type="submit"  name="status" value="OUT" formaction=@Url.Action("clock") formmethod="post"/>
+
+
+    </div>
+</div>
+
+@Html.Raw(ViewBag.status)
+
+
+
+<div>
+    @Html.ActionLink("Back to sign-in", "Index")
+</div>
