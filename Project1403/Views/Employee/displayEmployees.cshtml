@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "displayEmployees";
+}
+
+<h2>displayEmployees</h2>
+
+@if (ViewBag.Display == null)
+{
+    <p>The List is Empty</p>
+}
+else
+{
+    foreach (var emp in ViewBag.Display)
+    {
+        <ul>
+            <li>@emp.firstName @emp.lastName @emp.timeIN @emp.timeOUT</li>
+        </ul>
+    }
+}
