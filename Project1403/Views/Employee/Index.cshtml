@@ -4,38 +4,43 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<br />
+<br />
 
 <body>
-    <div class="jumbotron">
-        <div class="container">
-            <!--Create the HTML Form-->
-            @using (Html.BeginForm())
-            {
-                @Html.AntiForgeryToken()
-                @Html.ValidationSummary(false, "", new { @class = "text-danger" })
-                <p>First Name: @Html.TextBoxFor(x => x.firstName)</p>
+    <div class="w3-card-4 w3-blue-gray" style="padding: 15px">
+           
+        <h2 class="w3-center">New Temporary Employee</h2>
+        <div class="jumbotron w3-gray">
+            <div class="container">
+                <!--Create the HTML Form-->
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                    <p>First Name:<br /> @Html.TextBoxFor(x => x.firstName)</p>
 
-                <p>Last Name: @Html.TextBoxFor(x => x.lastName)</p>
+                    <p>Last Name: <br /> @Html.TextBoxFor(x => x.lastName)</p>
 
-                <p>Phone Number: @Html.TextBoxFor(x => x.phone)</p>
+                    <p>Phone Number:<br />  @Html.TextBoxFor(x => x.phone)</p>
 
-                <p>Confirm jobType: @Html.TextBoxFor(x => x.jobType)</p>
-                <p>Confirm Subcontractor: @Html.TextBoxFor(x => x.subcontractor)</p>
+                    <p>Confirm Job-Type:<br />  @Html.TextBoxFor(x => x.jobType)</p>
+                    <p>Confirm Subcontractor:<br />  @Html.TextBoxFor(x => x.subcontractor)</p>
 
-                <!--Create the Drop Down Lists-->
-                <p>
-                    Project Location:  @Html.DropDownListFor(x => x.location, new[] {
+                    <!--Create the Drop Down Lists-->
+                    <p>
+                        Project Location: <br />  @Html.DropDownListFor(x => x.location, new[] {
 new SelectListItem()
 {Text = "Project 001 - UVU Campus", Value = "1"},
 new SelectListItem()
-{Text = "Project 2 - Arbys", Value = "2"},
+{Text = "Project 002 - Arbys", Value = "2"},
 new SelectListItem()
-{Text = "Project 3 - Sushi YA", Value = "3"} }, "Choose an option")
-                </p>
+{Text = "Project 003 - Sushi YA", Value = "3"} }, "Choose an option")
+                    </p>
 
-                <input type="submit" value="Submit" />
-            }
+                    <input type="submit" value="Submit" class="btn-lg btn-success" />
+                }
+            </div>
         </div>
     </div>
 </body>

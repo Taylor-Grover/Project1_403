@@ -4,12 +4,13 @@
     ViewBag.Title = "clock";
 }
 
-<h2>clock</h2>
+<h2 class="w3-center">Clock-In/Out</h2>
 <div class="container">
     <div class="jumbotron">
 
-        <input type="submit"  name="status" value="IN" formaction=@Url.Action("clock") formmethod="post"/>
-        <input type="submit"  name="status" value="OUT" formaction=@Url.Action("clock") formmethod="post"/>
+        <input class="btn-lg btn-success w3-center" type="submit"  name="status" value="IN" formaction=@Url.Action("clock") formmethod="post"/>
+
+        <input class="btn-lg btn-danger w3-center" type="submit"  name="status" value="OUT" formaction=@Url.Action("clock") formmethod="post"/>
 
 
     </div>
