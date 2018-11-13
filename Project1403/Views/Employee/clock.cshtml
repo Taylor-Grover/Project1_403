@@ -8,9 +8,13 @@
 <div class="container">
     <div class="jumbotron">
 
-        <input class="btn-lg btn-success w3-center" type="submit"  name="status" value="IN" formaction=@Url.Action("clock") formmethod="post"/>
+        
+        @using (Html.BeginForm())
+        {
+        <input class="btn-lg btn-success w3-center" type="submit"  name="isClockedIn" value="IN" formaction=@Url.Action("clock") formmethod="post"/>
 
-        <input class="btn-lg btn-danger w3-center" type="submit"  name="status" value="OUT" formaction=@Url.Action("clock") formmethod="post"/>
+        <input class="btn-lg btn-danger w3-center" type="submit"  name="isClockedIn" value="OUT" formaction=@Url.Action("clock") formmethod="post"/>
+        }
 
 
     </div>
