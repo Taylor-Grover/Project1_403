@@ -13,8 +13,8 @@ namespace Project1403.Models
         public string jobType { get; set; }
         public string subcontractor { get; set; }
         public string location { get; set; }
-        public bool isClockedIn { get; set; }
-        public bool isClockedOut { get; set; }
+        public string isClockedIn { get; set; }
+        public string isClockedOut { get; set; }
         public DateTime timeIN { get; set; }
         public DateTime timeOUT { get; set; }
     }

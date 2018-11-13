@@ -38,9 +38,9 @@ namespace Project1403.Controllers
         }
 
         [HttpPost]
-        public ActionResult clock(Employee employee, string status)
+        public ActionResult clock(Employee employee)
         {
-            if (status == "IN")
+            if (employee.isClockedIn == "IN")
             {
                 employee.timeIN = DateTime.Now;
                 ViewBag.status = "Thank You " + employee.firstName + "You have been clocked in.";
