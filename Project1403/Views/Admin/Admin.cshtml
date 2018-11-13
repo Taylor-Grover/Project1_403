@@ -12,13 +12,26 @@
     <hr />
     <div class="row">
         <div class="col-lg-12">
-            <button type="button" onclick="location.href='@Url.Action("Project", "Admin")'">Create a new Project</button>
+            <button type="button" onclick="location.href='@Url.Action("Project", "Admin")'" style="color: black">Create a new Project</button>
         </div>
     </div>
-        <br />
+    <br />
     <div class="row">
         <div class="col-lg-12">
-            <button type="button" onclick="location.href='@Url.Action("SubContractor", "Admin")'">Add a new Subcontractor</button>
+            <button type="button" onclick="location.href='@Url.Action("SubContractor", "Admin")'" style="color: black">Add a new Subcontractor</button>
+        </div>
+    </div>
+
+    <!--Buttons to see all rooms/projects-->
+    <div class="row">
+        <div class="col-lg-12">
+            <button type="button" onclick="location.href='@Url.Action("ProjectList", "Admin")'" style="color: black">See all Projects</button>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-lg-12">
+            <button type="button" onclick="location.href='@Url.Action("SubContractorList", "Admin")'" style="color: black">See all Subcontractors</button>
         </div>
     </div>
 </div>

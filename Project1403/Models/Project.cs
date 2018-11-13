@@ -18,6 +18,6 @@ namespace Project1403.Models
         public string location { get; set; }
 
         [DisplayName("Supervisor ID")]
-        public int supervisor { get; set; }
+        public string supervisor { get; set; }
     }
 }
