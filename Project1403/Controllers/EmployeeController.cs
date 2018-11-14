@@ -54,5 +54,27 @@ namespace Project1403.Controllers
            
             return View();
         }
+
+        [HttpGet]
+        public ActionResult pausepage()
+        {
+           
+                return View();
+            
+        }
+
+        [HttpPost]
+        public ActionResult pausepage(Employee employee)
+        {
+            if (ModelState.IsValid)
+            {
+
+                return View("clock", employee);
+            }
+            else
+            {
+                return View("Index");
+            }
+        }
     }
 }

@@ -5,26 +5,30 @@
     ViewBag.Title = "Admin";
 }
 
-<h2>Admin</h2>
+
 
 <div>
-    <h4>Admin</h4>
+    <br />
+    <h4>Update Projects</h4>
     <hr />
     <div class="row">
-        <div class="col-lg-6">
-            <button type="button" class="w3-button w3-large" onclick="location.href='@Url.Action("Project", "Admin")'" style="background-color: cadetblue">Create a new Project</button>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-lg"  onclick="location.href='@Url.Action("Project", "Admin")'" style="background-color: cadetblue">Create a new Project</button>
         </div>
-        <div class="col-lg-6">
-            <button type="button" class="w3-button w3-large" onclick="location.href='@Url.Action("SubContractor", "Admin")'" style="background-color: cadetblue">Add a new Subcontractor</button>
+        <br />
+
+        <div class="col-md-6">
+            <button type="button" class="btn btn-lg" onclick="location.href='@Url.Action("SubContractor", "Admin")'" style="background-color: cadetblue">Add a new Subcontractor</button>
         </div>
     </div>
     <br />
     <div class="row">
         <div class="col-lg-6">
-            <button type="button" class="w3-button w3-large" onclick="location.href='@Url.Action("ProjectList", "Admin")'" style="background-color: cadetblue">See all Projects</button>
+            <button type="button" class="btn btn-lg" onclick="location.href='@Url.Action("ProjectList", "Admin")'" style="background-color: cadetblue">Manage Projects</button>
         </div>
+        <br />
         <div class="col-lg-6">
-            <button type="button" class="w3-button w3-large btn-primary" onclick="location.href='@Url.Action("SubContractorList", "Admin")'" style="background-color: cadetblue">See all Subcontractors</button>
+            <button type="button" class="btn btn-lg" onclick="location.href='@Url.Action("SubContractorList", "Admin")'" style="background-color: cadetblue">Manage Subcontractors</button>
         </div>
     </div>
 
