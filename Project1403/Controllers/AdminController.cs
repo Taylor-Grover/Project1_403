@@ -19,6 +19,12 @@ namespace Project1403.Controllers
             return View();
         }
 
+        
+        public ActionResult Admin()
+        {
+            return View();
+        }
+
         [HttpPost]
         public ActionResult Index(string username, string password)
         {
